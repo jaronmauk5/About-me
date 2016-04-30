@@ -7,13 +7,17 @@ body {
 
 .masthead-heading,
 .masthead-intro,
-.content-footer {
+.content-footer, h3 {
   text-align: center;
+}
+.pre-intro {
+  font-size: 2em;
+  color:white;
 }
 
 .masthead {
   padding: 6em 0;
-  background-image: url('https://images.unsplash.com/photo-1451906278231-17b8ff0a8880?crop=entropy&dpr=2&fit=crop&fm=jpg&h=625&ixjsv=2.1.0&ixlib=rb-0.3.5&q=50&w=1200');
+  background-image: url("../Images/rock.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -60,42 +64,70 @@ body {
   margin: 2em 0 1em 0;
 }
 
-.content-footer{
+.social {
+    background-color: #fff;
     overflow: auto;
+    padding-bottom: 9.375rem;
     text-align: center;
 }
 
-.social {
-  padding: 0;
+.icons {
+  padding-left: 0;
+  line-height: 2.35em;
 }
-
-
-.content-footer .social > li {
+.social .icons > li {
     border-radius: 1.25rem;
     width:2.5rem;
     height:2.5rem;
     display: inline-block;
     margin:1.25rem 5px;
     border:1px solid #eaebec;
-    padding:0;
+    padding-top:0;
     text-align:center;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s
 }
 
-.github {
+.github{
   color:black;
 }
 
-.twitter {
-  color:#55acee;
-}
-
-.instagram{
-  color:#3f729b;
+.github:hover{
+  cursor: pointer; 
+  color:white;
+  background-color: black;
 }
 
 .linkedin{
-  color:#116FB0;
+  color:#186DB0;
 }
+
+.linkedin:hover{
+  cursor: pointer;
+  color:white;
+  background-color:#186DB0;
+}
+.twitter{
+  color: #55acee;
+}
+
+.twitter:hover{
+  cursor: pointer;
+  color:white;
+  background-color:#55acee;
+}
+
+
+.instagram{
+  color: #3f729b;
+}
+
+.instagram:hover{
+  cursor: pointer;
+  color:white;
+  background-color:#3f729b;
+}
+
 section > h1 {
   margin-top: 2em;
 }
