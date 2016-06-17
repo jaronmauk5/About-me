@@ -5,6 +5,38 @@ body {
   font-family: "Open Sans", "Helvetica Neue", sans-serif;
 }
 
+.nav-wrapper {
+  position: fixed;
+  width: 100%;
+  background-color: white;
+}
+
+.nav-content {
+  text-align: right;
+  display:block;
+  margin:0px;
+}
+
+.nav-content li {
+  font-family: "Helvetica Neue", sans-serif;
+  display: inline-block;
+  margin-left: -5px;
+  
+}
+
+.nav-content li a {
+  padding: 18px;
+  display: block;
+  text-decoration: none;
+  color: black;
+  -webkit-transition: background-color .4s; /* Safari */
+    transition: background-color .4s;
+}
+
+.nav-content li a:hover{
+  background-color: #BEAB97;
+}
+
 .masthead-heading,
 .masthead-intro,
 .content-footer, h3 {
@@ -127,6 +159,19 @@ body {
   color:white;
   background-color:#3f729b;
 }
+
+
+
+.page {
+  display: none;
+}
+
+#about {
+  display: block;
+}
+
+
+
 
 section > h1 {
   margin-top: 2em;
