@@ -14,7 +14,7 @@ body {
 .nav-content {
   text-align: right;
   display:block;
-  margin:0px;
+  margin:5px;
 }
 
 .nav-content li {
@@ -34,8 +34,16 @@ body {
 }
 
 .nav-content li a:hover{
-  background-color: #BEAB97;
+  background-color: #DBDBDB;
 }
+
+.nav-wrapper .logo {
+  position: fixed;
+  height: 3.5rem;
+  top:4px;
+  padding-left: 15px;
+}
+
 
 .masthead-heading,
 .masthead-intro,
@@ -160,6 +168,16 @@ body {
   background-color:#3f729b;
 }
 
+.copy {
+  display: block;
+}
+
+.logo-foot {
+  height: 150px;
+  display: inline-block;
+  padding-top: 35px;
+}
+
 
 
 .page {
@@ -179,6 +197,15 @@ section > h1 {
 
 
 @media only screen and (max-width: 500px) {
+      
+    .nav-content {
+      font-size: .8em;
+    }
+
+    .nav-wrapper .logo {
+      padding-left: 8px;
+    }
+
     .masthead-heading {
         font-size: 3em;
     }
