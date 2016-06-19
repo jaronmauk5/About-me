@@ -104,6 +104,18 @@ body {
   margin: 2em 0 1em 0;
 }
 
+
+.page {
+  max-width: 38em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2em;
+}
+
+.page > h1 {
+  margin-top: 2em;
+}
+
 .social {
     background-color: #fff;
     overflow: auto;
@@ -173,7 +185,7 @@ body {
 }
 
 .logo-foot {
-  height: 150px;
+  height: 115px;
   display: inline-block;
   padding-top: 35px;
 }
@@ -217,6 +229,10 @@ section > h1 {
     }
     .masthead-heading {
         font-size: 3em;
+    }
+
+    .logo-foot {
+      height: 100px;
     }
 }
 
