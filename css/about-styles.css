@@ -116,6 +116,37 @@ body {
   margin-top: 2em;
 }
 
+.project{
+  vertical-align: top;
+  text-align: center;
+  width:47%;
+  height:252px;
+  margin: 10px 1%;
+  display: inline-block;
+}
+
+.project img{
+  max-width:100%;
+}
+
+.list-project{
+  margin-top:25px;
+}
+
+.list-project img{
+  margin-bottom: 15px;
+}
+
+.haduken-project {
+  margin-top:2px;
+}
+
+.haduken-project img {
+  max-width: 47%;
+  display: block;
+  margin: 0 auto;
+}
+
 .social {
     background-color: #fff;
     overflow: auto;
@@ -140,7 +171,7 @@ body {
     transition-duration: 0.4s
 }
 
-.github{
+.github .fa{
   color:black;
 }
 
@@ -150,7 +181,11 @@ body {
   background-color: black;
 }
 
-.linkedin{
+.github:hover .fa{
+  color:white;
+}
+
+.linkedin .fa{
   color:#186DB0;
 }
 
@@ -159,7 +194,12 @@ body {
   color:white;
   background-color:#186DB0;
 }
-.twitter{
+
+.linkedin:hover .fa {
+  color:white;
+}
+
+.twitter .fa{
   color: #55acee;
 }
 
@@ -169,15 +209,22 @@ body {
   background-color:#55acee;
 }
 
+.twitter:hover .fa{
+  color:white;
+}
 
-.instagram{
+.instagram .fa {
   color: #3f729b;
 }
 
-.instagram:hover{
+.instagram:hover {
   cursor: pointer;
   color:white;
   background-color:#3f729b;
+}
+
+.instagram:hover .fa{
+  color:white;
 }
 
 .copy {
@@ -207,6 +254,16 @@ section > h1 {
   margin-top: 2em;
 }
 
+@media only screen and (max-width: 767px){
+  h1 {
+    text-align: center;
+  }
+
+   .introduction-section,.location-section,.questions-section {
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+}
 
 @media only screen and (max-width: 500px) {
       
@@ -221,9 +278,7 @@ section > h1 {
     .masthead-heading {
         font-size: 3em;
     }
-}
 
-@media only screen and (max-width: 500px) {
     .masthead {
         padding: 3em 0;
     }
@@ -234,12 +289,16 @@ section > h1 {
     .logo-foot {
       height: 100px;
     }
-}
 
-@media only screen and (max-width: 500px) {
     .introduction-section,.location-section,.questions-section {
         padding-left: 2.5em;
         padding-right: 2.5em;
+    }
+
+    .project {
+      width: 90%;
+      margin-left: 5%;
+      margin-right: 5%;
     }
 }
 
